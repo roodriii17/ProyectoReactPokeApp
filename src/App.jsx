@@ -10,6 +10,8 @@ import { Recordatorio } from './components/Jugar';
 import Navbar from './components/Navbar';
 import PokemonDetail from './components/Pokemondetalles';
 import './App.css';
+import Modal from 'react-modal';
+
 
 function App() {
   const [user, setUser] = useState(null);
