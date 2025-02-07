@@ -1,0 +1,86 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  
+  }
+  
+  .login-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-title {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-input {
+    width: calc(100% - 22px);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .primary-button {
+    background-color: #3b4cca;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .primary-button:hover {
+    background-color: #2a3b8f;
+  }
+  
+  .secondary-button {
+    background-color: #ffcb05;
+    color: #3b4cca;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .secondary-button:hover {
+    background-color: #ffb700;
+  }
+  
+  .toggle-button {
+    background-color: transparent;
+    color: #3b4cca;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    width: 100%;
+    transition: color 0.3s;
+  }
+  
+  .toggle-button:hover {
+    color: #2a3b8f;
+  }

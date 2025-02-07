@@ -1,0 +1,90 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 60px; 
+    width: 100%;
+    height: calc(100% - 60px); 
+    overflow-y: auto; 
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  button {
+    background-color: #ffcb05;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #3b4cca;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: calc(100% - 22px);
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #3b4cca;
+    outline: none;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  img {
+    border-radius: 10px;
+    margin: 10px 0;
+  }

@@ -1,0 +1,128 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333; 
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffcb05;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #3b4cca;
+  font-weight: bold;
+}
+
+.navbar nav a:hover {
+  color: #ff0000;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar div p {
+  margin: 0;
+}
+
+.navbar div button {
+  background-color: #ffcb05;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #3b4cca;
+  transition: background-color 0.3s;
+}
+
+.navbar div button:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.main-content {
+  margin-top: 80px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #ffcb05;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #3b4cca;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
