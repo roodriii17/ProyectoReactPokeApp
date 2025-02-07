@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getFirestore, collection, addDoc, getDocs, query, orderBy, limit } from 'firebase/firestore';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { db, auth } from '../firebase'; // Importa la configuración de Firebase
+import { db, auth } from '../firebase'; 
 import './Jugar.css'; 
 
 export function Recordatorio() {
@@ -69,8 +69,8 @@ export function Recordatorio() {
         setMessage(`Incorrecto. Te quedan ${newAttempts} intentos.`);
       } else {
         setMessage(`Oh! Me temo que tienes que ver más la serie. El Pokémon era ${currentPokemon.name}.`);
-        setAttempts(3); // Reinicia los intentos
-        fetchRandomPokemon(); // Obtén un nuevo Pokémon
+        setAttempts(3); 
+        fetchRandomPokemon(); 
       }
     }
     setGuess('');
@@ -88,7 +88,7 @@ export function Recordatorio() {
         user: user.displayName || user.email, 
         score: score 
       });
-      fetchScores(); // Actualiza el ranking después de guardar la puntuación
+      fetchScores(); 
     } catch (error) {
       console.error('Error al guardar la puntuación:', error);
     }
@@ -97,7 +97,7 @@ export function Recordatorio() {
   // Obtener las mejores puntuaciones
   const fetchScores = async () => {
     try {
-      const q = query(collection(db, 'puntuacion'), orderBy('score', 'desc'), limit(3)); // Limitar a 3 mejores puntuaciones
+      const q = query(collection(db, 'puntuacion'), orderBy('score', 'desc'), limit(3)); 
       const querySnapshot = await getDocs(q);
       const scoresData = querySnapshot.docs.map(doc => doc.data());
       setScores(scoresData);
@@ -109,8 +109,8 @@ export function Recordatorio() {
   // Manejar el botón de saltar Pokémon
   const handleSkipPokemon = async () => {
     if (userScore > 0) {
-      await saveScore(userScore); // Guarda la puntuación actual antes de obtener un nuevo Pokémon
-      setUserScore(0); // Reinicia la puntuación del usuario
+      await saveScore(userScore); 
+      setUserScore(0); 
     }
     fetchRandomPokemon();
   };

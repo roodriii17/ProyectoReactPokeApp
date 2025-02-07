@@ -19,7 +19,7 @@ export function Login() {
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           console.log('User registered:', userCredential.user);
-          navigate('/'); // Redirigir al inicio después de registrarse
+          navigate('/'); 
         })
         .catch((error) => {
           console.error('Error registering:', error);
@@ -28,7 +28,7 @@ export function Login() {
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           console.log('User signed in:', userCredential.user);
-          navigate('/'); // Redirigir al inicio después de iniciar sesión
+          navigate('/'); 
         })
         .catch((error) => {
           console.error('Error signing in:', error);
@@ -41,7 +41,7 @@ export function Login() {
     signInWithPopup(auth, provider)
       .then((result) => {
         console.log('User signed in with Google:', result.user);
-        navigate('/'); // Redirigir al inicio después de iniciar sesión con Google
+        navigate('/'); 
       })
       .catch((error) => {
         console.error('Error signing in with Google:', error);
@@ -53,7 +53,7 @@ export function Login() {
     signInWithPopup(auth, provider)
       .then((result) => {
         console.log('User signed in with GitHub:', result.user);
-        navigate('/'); // Redirigir al inicio después de iniciar sesión con GitHub
+        navigate('/'); 
       })
       .catch((error) => {
         console.error('Error signing in with GitHub:', error);

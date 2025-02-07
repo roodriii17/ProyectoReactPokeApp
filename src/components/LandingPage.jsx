@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './LandingPage.css'; // Importa los estilos para la landing page
+import './LandingPage.css';
 
 export function LandingPage() {
   return (
