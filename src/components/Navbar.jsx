@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import pokemonLogo from './img/logo.png';
+import pokemonLogo from '../img/logo.png';
 
 function Navbar({ user, handleSignOut }) {
   const navigate = useNavigate();
